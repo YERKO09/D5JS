@@ -23,10 +23,14 @@ const tareasArray = [
     }
 ] //guardar las tareas
 
+console.log("orden1",tareasArray);
+const tareasArrayOrdenada = tareasArray.sort((x,y) => y.id - x.id)
+console.log("orden2",tareasArrayOrdenada);
+
 const mostrarLista = () => {
 
     let html = `<div class="headList"><strong>ID</strong><strong>Tareas</strong></div>`
-    tareasArray.forEach((item) => {
+    tareasArrayOrdenada.forEach((item) => {
     html += `
         <div class="listBody">
             <div class="listData">
@@ -50,7 +54,7 @@ btnAgregar.addEventListener("click", () => {
     const nombreTarea = tareaInput.value
     const id = tareasArray.length + 1
     // tareasArray.unshift(nombreTarea)
-    tareasArray.push({
+    tareasArray.unshift({
         id,
         descripcion: nombreTarea,
         estado: false
