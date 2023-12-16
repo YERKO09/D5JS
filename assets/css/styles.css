@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+main {
+  margin-top: 100px;
+  width: 80%;
+  background-color: rgb(233, 233, 233);
+  padding: 20px;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 20px;
+}
+main hr {
+  margin: 20px 0px;
+}
+main #nuevaTarea {
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 5px;
+  padding: 10px;
+  width: 80%;
+}
+main .btnAgregar {
+  color: white;
+  background-color: green;
+  border: 0px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 19%;
+  transition: all 0.5s ease;
+}
+main .btnAgregar:hover {
+  background-color: rgb(2, 165, 2);
+  cursor: pointer;
+}
+main .seccion2 {
+  display: flex;
+  margin: 20px 0px;
+}
+main .seccion2 .div1 {
+  width: 30%;
+}
+main .seccion2 .div2 {
+  width: 70%;
+  padding-right: 10px;
+}
+main .seccion2 .div2 #tareas {
+  display: flex;
+  flex-direction: column;
+}
+main .seccion2 .div2 #tareas .listBody {
+  display: flex;
+  justify-content: space-between;
+}
+main .seccion2 .div2 #tareas .headList, main .seccion2 .div2 #tareas .listData {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main .delete {
+  border: 0px;
+  border-radius: 5px;
+  padding: 10px;
+  width: auto;
+  transition: all 0.5s ease;
+}
+main .delete:hover {
+  cursor: pointer;
+  color: black;
+  background-color: rgb(219, 219, 219);
+}/*# sourceMappingURL=styles.css.map */
